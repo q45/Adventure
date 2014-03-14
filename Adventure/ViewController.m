@@ -26,4 +26,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
+    
+    UIViewController *vc = segue.destinationViewController;
+    
+    vc.navigationItem.title = self.clearUpBoxesButton.currentTitle;
+    
+    
+}
+
 @end
