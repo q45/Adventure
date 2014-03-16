@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AdventureViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,9 +32,23 @@
     
     UIViewController *vc = segue.destinationViewController;
     
-    vc.navigationItem.title = self.clearUpBoxesButton.currentTitle;
-    
+    vc.title = sender.currentTitle;
     
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+   //get keyboard to disappear
+}
+
+-(IBAction)unwindFromDestinationViewController:(UIStoryboardSegue *)sender
+{
+    UIViewController *vc = sender.sourceViewController;
+    self.endLabel.text = vc.navigationItem.title;
+    NSLog(@"%@", self.endLabel.text);
+    
+}
+
+
 
 @end

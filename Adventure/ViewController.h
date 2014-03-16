@@ -12,4 +12,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *clearUpBoxesButton;
 
 @property (strong, nonatomic) IBOutlet UIButton *eatBoxesButton;
+
+@property (strong, nonatomic) IBOutlet UILabel *endLabel;
+
+
 @end

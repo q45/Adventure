@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="“Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes.”" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-jH-wDf">
-                                <rect key="frame" x="0.0" y="64" width="320" height="227"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-jH-wDf">
+                                <rect key="frame" x="0.0" y="310" width="320" height="124"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLp-y4-1n0">
-                                <rect key="frame" x="108" y="328" width="104" height="30"/>
+                                <rect key="frame" x="196" y="442" width="104" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear up boxes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZO-dh-jlS">
-                                <rect key="frame" x="126" y="382" width="69" height="30"/>
+                                <rect key="frame" x="20" y="442" width="69" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Eat boxes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,6 +43,16 @@
                                     <segue destination="qq9-pB-nc0" kind="push" id="BvH-3H-mE1"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="n2N-7x-WYx">
+                                <rect key="frame" x="0.0" y="64" width="320" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXy-ln-TNb">
+                                <rect key="frame" x="20" y="500" width="280" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -50,6 +60,7 @@
                     <connections>
                         <outlet property="clearUpBoxesButton" destination="nLp-y4-1n0" id="T7M-DR-Wrn"/>
                         <outlet property="eatBoxesButton" destination="9ZO-dh-jlS" id="Hmt-BU-gDi"/>
+                        <outlet property="endLabel" destination="qXy-ln-TNb" id="Mq8-Ww-IH7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -67,6 +78,29 @@
                     <view key="view" contentMode="scaleToFill" id="Vx4-sU-HpL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box" translatesAutoresizingMaskIntoConstraints="NO" id="vuW-oU-YDn">
+                                <rect key="frame" x="0.0" y="63" width="320" height="185"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpo-jL-Ugl">
+                                <rect key="frame" x="93" y="445" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Unfortunate Ending">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1rM-BD-uk9" kind="push" id="SMZ-bs-N73"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I have eaten foam peanutes before -  but never the box that they came in?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ydI-Ja-5Ul">
+                                <rect key="frame" x="40" y="288" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8wF-kE-0Al"/>
@@ -74,6 +108,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGg-5h-MOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1359" y="474"/>
+        </scene>
+        <!--Adventure View Controller - Sad Ending-->
+        <scene sceneID="UX0-7R-c2E">
+            <objects>
+                <viewController id="1rM-BD-uk9" customClass="AdventureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fqP-RU-0rT"/>
+                        <viewControllerLayoutGuide type="bottom" id="WgA-CJ-Z4s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kjG-kR-Nsx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tums" translatesAutoresizingMaskIntoConstraints="NO" id="SRA-dx-eXQ">
+                                <rect key="frame" x="0.0" y="66" width="320" height="217"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fF-DR-mKG">
+                                <rect key="frame" x="120" y="453" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bad Ending">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q97-dR-D98" kind="unwind" unwindAction="unwindFromDestinationViewController:" id="cnh-UZ-7tZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets stomach pumped. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-sj-YeV">
+                                <rect key="frame" x="40" y="306" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sad Ending" id="Qgo-5T-0cR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pAf-XW-xpu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Q97-dR-D98" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="460"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LKi-el-TcT">
@@ -86,6 +163,29 @@
                     <view key="view" contentMode="scaleToFill" id="bcV-2T-vv7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pick_up" translatesAutoresizingMaskIntoConstraints="NO" id="gi7-bR-f8e">
+                                <rect key="frame" x="0.0" y="63" width="320" height="135"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdQ-YC-091">
+                                <rect key="frame" x="112" y="403" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Happy Ending">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9if-H5-1iL" kind="push" id="II3-cq-UKU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Boy, we need to get these boxes cleaned up." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kw3-Gn-cYq">
+                                <rect key="frame" x="40" y="241" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="7fm-U4-BjS"/>
@@ -93,6 +193,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOi-7s-6wr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1364" y="-245"/>
+        </scene>
+        <!--Adventure View Controller - Happy Ending-->
+        <scene sceneID="y4b-P5-09r">
+            <objects>
+                <viewController id="9if-H5-1iL" customClass="AdventureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oss-NL-PT3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gdd-Yx-5z6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B2k-By-bpX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="disney" translatesAutoresizingMaskIntoConstraints="NO" id="p6J-Ne-D11">
+                                <rect key="frame" x="0.0" y="62" width="320" height="183"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eD-7z-JPf">
+                                <rect key="frame" x="112" y="398" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Happy Ending">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xp5-wo-kUd" kind="unwind" unwindAction="unwindFromDestinationViewController:" id="mAo-s3-erU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan gets married with four children. The end." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-Fq-4Im">
+                                <rect key="frame" x="40" y="273" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Happy Ending" id="qMM-NC-LrJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scy-KJ-9mT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xp5-wo-kUd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1816" y="-245"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3eW-oO-LFN">
@@ -113,6 +256,13 @@
             <point key="canvasLocation" x="497" y="66"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="box" width="225" height="225"/>
+        <image name="disney" width="299" height="168"/>
+        <image name="pick_up" width="227" height="222"/>
+        <image name="pizza" width="400" height="300"/>
+        <image name="tums" width="224" height="225"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
